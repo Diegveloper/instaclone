@@ -2,9 +2,14 @@ import 'zone.js/dist/zone';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { bootstrapApplication } from '@angular/platform-browser';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+import { AppModule } from './app/app.module';
+
+
 
 @Component({
-  selector: 'my-app',
+  selector: 'app-root',
   standalone: true,
   imports: [CommonModule],
   template: `
@@ -12,6 +17,10 @@ import { bootstrapApplication } from '@angular/platform-browser';
     <a target="_blank" href="https://angular.io/start">
       Learn more about Angular 
     </a>
+ 
+    
+  
+    
   `,
 })
 export class App {
